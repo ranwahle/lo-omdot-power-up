@@ -3,7 +3,7 @@ import logger from 'koa-logger';
 import json from 'koa-json';
 import serve from 'koa-static';
 import Router from 'koa-router';
-import dotEnv from 'dotEnv';
+import dotEnv from 'dotenv';
 import { getProfiles } from './rav-kav-api.js';
 
 dotEnv.config();
