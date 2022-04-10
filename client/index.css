@@ -1,0 +1,31 @@
+:root {
+    --primary-color: blue;
+    --primary-font-color: white;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    padding: 1em 0;
+}
+button {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 100%;
+}
+
+button:hover{
+    box-shadow: 1px 1px #888888;
+}

@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>רב קו לא עומדות מנגד</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <h1>רב קו לא עומדות מנגד</h1>
+    <form>
+      <div>
+        <label
+          >מספר הכרטיס
+          <input
+            type="number"
+            required
+            placeholder="מספר הכרטיס, לא חובה אפסים מובילים"
+            title="מספר הכרטיס, לא חובה אפסים מובילים"
+            name="cardNumber"
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >פרופיל
+          <select name="profile" required>
+            <option value="">פרופיל הכרטיס</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label
+          >שם הרכזת
+          <input
+            type="text"
+            name="coordinatorName"
+            placeholder="שם הרכזת"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >מספר הטלפון של הרכזת
+          <input
+            type="tel"
+            name="coordinatorPhoneNumber"
+            placeholder="מספר הטלפון של הרכזת"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >טקסט לכתיבה בפוסט
+          <br />
+          <textarea
+            name="textForSocialMediaPost"
+            placeholder="טקסט לכתיבה בפוסט"
+          ></textarea>
+        </label>
+      </div>
+      <div>
+        <label
+          >הערות נוספות
+          <br />
+          <textarea
+            name="additionalComments"
+            placeholder="סכום מבוקש, הזמנה מיוחדת שאינה ערך צבור, וכ'ו"
+          ></textarea>
+        </label>
+      </div>
+      <div>
+        <label>
+ממש לא חובה, אבל אם צריך, אז צילום הכרטיס          <br />
+          <input type="file"
+            name="cardPhoto" accept="image/png, image/gif, image/jpeg" >
+           
+        </label>
+        <div id="image-peview">
+            <img>
+        </div>
+      </div>
+      <div>
+        <button type="submit">שליחה</button>
+      </div>
+    </form>
+  </body>
+</html>
