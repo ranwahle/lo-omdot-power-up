@@ -15,7 +15,7 @@ div {
     padding: 1em 0;
 }
 
-input {
+input, select, textarea {
     width: 100%;
 }
 button {
