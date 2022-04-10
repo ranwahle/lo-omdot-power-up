@@ -12,7 +12,7 @@ const app = new Koa();
 app.use(serve('./client'))
 const router = new Router();
 
-router.get('/profiles', async (ctx, next)=> {
+router.get('/profiles', async (ctx: {body: any}, next: () => Promise<any>)=> {
     const profiles = await getProfiles();
     console.log('profiles', profiles);
     ctx.body = profiles;
